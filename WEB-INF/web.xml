@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="4.0"
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+   <!-- To save as "hello\WEB-INF\web.xml" -->
+   <!-- test servlet -->
+   <servlet>
+      <servlet-name>Test</servlet-name>
+      <servlet-class>SudoTest</servlet-class>
+   </servlet>
+
+   <servlet>
+      <servlet-name>TestSearch</servlet-name>
+      <servlet-class>SudoSearch</servlet-class>
+   </servlet>
+   <!-- test servlet END -->
+
+   <servlet>
+     <servlet-name>SignUp</servlet-name>
+     <servlet-class>SignUp</servlet-class>
+   </servlet>
+
+   <servlet>
+     <servlet-name>Login</servlet-name>
+     <servlet-class>Login</servlet-class>
+   </servlet>
+
+   <servlet>
+     <servlet-name>HomePage</servlet-name>
+     <servlet-class>HomePage</servlet-class>
+   </servlet>
+
+   <servlet>
+     <servlet-name>PostBlog</servlet-name>
+     <servlet-class>PostBlog</servlet-class>
+   </servlet>
+
+   <!-- Note: All <servlet> elements MUST be grouped together and
+         placed IN FRONT of the <servlet-mapping> elements -->
+   <!-- test servlet -->
+   <servlet-mapping>
+      <servlet-name>Test</servlet-name>
+      <url-pattern>/sudo-test</url-pattern>
+   </servlet-mapping>
+
+   <servlet-mapping>
+      <servlet-name>TestSearch</servlet-name>
+      <url-pattern>/sudo-search</url-pattern>
+   </servlet-mapping>
+   <!-- test servlet END -->
+
+   <servlet-mapping>
+     <servlet-name>SignUp</servlet-name>
+     <url-pattern>/signup</url-pattern>
+   </servlet-mapping>
+
+   <servlet-mapping>
+     <servlet-name>Login</servlet-name>
+     <url-pattern>/login</url-pattern>
+   </servlet-mapping>
+
+   <servlet-mapping>
+     <servlet-name>HomePage</servlet-name>
+     <url-pattern>/homepage</url-pattern>
+   </servlet-mapping>
+
+   <servlet-mapping>
+     <servlet-name>PostBlog</servlet-name>
+     <url-pattern>/postblog</url-pattern>
+   </servlet-mapping>
+
+</web-app>
